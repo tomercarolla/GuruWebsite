@@ -8,12 +8,6 @@
   --color-primary-700: #1F2F40;
   --color-primary-800: #132133;
   --color-primary-900: #0B172A;
-  --color-primary-transparent-100: rgba(62, 79, 89, 0.08);
-  --color-primary-transparent-200: rgba(62, 79, 89, 0.16);
-  --color-primary-transparent-300: rgba(62, 79, 89, 0.24);
-  --color-primary-transparent-400: rgba(62, 79, 89, 0.32);
-  --color-primary-transparent-500: rgba(62, 79, 89, 0.4);
-  --color-primary-transparent-600: rgba(62, 79, 89, 0.48);
   --color-success-100: #E6FCF5;
   --color-success-200: #CDFAEF;
   --color-success-300: #B0F0E5;
@@ -23,12 +17,6 @@
   --color-success-700: #398393;
   --color-success-800: #246076;
   --color-success-900: #154762;
-  --color-success-transparent-100: rgba(114, 204, 205, 0.08);
-  --color-success-transparent-200: rgba(114, 204, 205, 0.16);
-  --color-success-transparent-300: rgba(114, 204, 205, 0.24);
-  --color-success-transparent-400: rgba(114, 204, 205, 0.32);
-  --color-success-transparent-500: rgba(114, 204, 205, 0.4);
-  --color-success-transparent-600: rgba(114, 204, 205, 0.48);
   --color-info-100: #CAFAEA;
   --color-info-200: #97F6DF;
   --color-info-300: #60E6D0;
@@ -38,12 +26,6 @@
   --color-info-700: #03657B;
   --color-info-800: #014963;
   --color-info-900: #013552;
-  --color-info-transparent-100: rgba(6, 170, 172, 0.08);
-  --color-info-transparent-200: rgba(6, 170, 172, 0.16);
-  --color-info-transparent-300: rgba(6, 170, 172, 0.24);
-  --color-info-transparent-400: rgba(6, 170, 172, 0.32);
-  --color-info-transparent-500: rgba(6, 170, 172, 0.4);
-  --color-info-transparent-600: rgba(6, 170, 172, 0.48);
   --color-warning-100: #FEF7D8;
   --color-warning-200: #FEEDB2;
   --color-warning-300: #FEE08C;
@@ -53,12 +35,6 @@
   --color-warning-700: #B67920;
   --color-warning-800: #935B14;
   --color-warning-900: #79450C;
-  --color-warning-transparent-100: rgba(254, 190, 64, 0.08);
-  --color-warning-transparent-200: rgba(254, 190, 64, 0.16);
-  --color-warning-transparent-300: rgba(254, 190, 64, 0.24);
-  --color-warning-transparent-400: rgba(254, 190, 64, 0.32);
-  --color-warning-transparent-500: rgba(254, 190, 64, 0.4);
-  --color-warning-transparent-600: rgba(254, 190, 64, 0.48);
   --color-danger-100: #F4F4F5;
   --color-danger-200: #E9E9EC;
   --color-danger-300: #C4C4C7;
@@ -68,12 +44,179 @@
   --color-danger-700: #222233;
   --color-danger-800: #161629;
   --color-danger-900: #0D0D22;
+}
+
+:root {
+  --color-primary-transparent-100: rgba(62, 79, 89, 0.08);
+  --color-primary-transparent-200: rgba(62, 79, 89, 0.16);
+  --color-primary-transparent-300: rgba(62, 79, 89, 0.24);
+  --color-primary-transparent-400: rgba(62, 79, 89, 0.32);
+  --color-primary-transparent-500: rgba(62, 79, 89, 0.4);
+  --color-primary-transparent-600: rgba(62, 79, 89, 0.48);
+  --color-success-transparent-100: rgba(114, 204, 205, 0.08);
+  --color-success-transparent-200: rgba(114, 204, 205, 0.16);
+  --color-success-transparent-300: rgba(114, 204, 205, 0.24);
+  --color-success-transparent-400: rgba(114, 204, 205, 0.32);
+  --color-success-transparent-500: rgba(114, 204, 205, 0.4);
+  --color-success-transparent-600: rgba(114, 204, 205, 0.48);
+  --color-info-transparent-100: rgba(6, 170, 172, 0.08);
+  --color-info-transparent-200: rgba(6, 170, 172, 0.16);
+  --color-info-transparent-300: rgba(6, 170, 172, 0.24);
+  --color-info-transparent-400: rgba(6, 170, 172, 0.32);
+  --color-info-transparent-500: rgba(6, 170, 172, 0.4);
+  --color-info-transparent-600: rgba(6, 170, 172, 0.48);
+  --color-warning-transparent-100: rgba(254, 190, 64, 0.08);
+  --color-warning-transparent-200: rgba(254, 190, 64, 0.16);
+  --color-warning-transparent-300: rgba(254, 190, 64, 0.24);
+  --color-warning-transparent-400: rgba(254, 190, 64, 0.32);
+  --color-warning-transparent-500: rgba(254, 190, 64, 0.4);
+  --color-warning-transparent-600: rgba(254, 190, 64, 0.48);
   --color-danger-transparent-100: rgba(69, 69, 71, 0.08);
   --color-danger-transparent-200: rgba(69, 69, 71, 0.16);
   --color-danger-transparent-300: rgba(69, 69, 71, 0.24);
   --color-danger-transparent-400: rgba(69, 69, 71, 0.32);
   --color-danger-transparent-500: rgba(69, 69, 71, 0.4);
   --color-danger-transparent-600: rgba(69, 69, 71, 0.48);
+}
+
+/* Implement sass map to colors */
+/* generating HEX background colors */
+/* generating RGBA background colors */
+/* Create bg color from map */
+.bg-color-primary-100 {
+  background-color: var(--color-primary-100);
+}
+.bg-color-primary-200 {
+  background-color: var(--color-primary-200);
+}
+.bg-color-primary-300 {
+  background-color: var(--color-primary-300);
+}
+.bg-color-primary-400 {
+  background-color: var(--color-primary-400);
+}
+.bg-color-primary-500 {
+  background-color: var(--color-primary-500);
+}
+.bg-color-primary-600 {
+  background-color: var(--color-primary-600);
+}
+.bg-color-primary-700 {
+  background-color: var(--color-primary-700);
+}
+.bg-color-primary-800 {
+  background-color: var(--color-primary-800);
+}
+.bg-color-primary-900 {
+  background-color: var(--color-primary-900);
+}
+.bg-color-success-100 {
+  background-color: var(--color-success-100);
+}
+.bg-color-success-200 {
+  background-color: var(--color-success-200);
+}
+.bg-color-success-300 {
+  background-color: var(--color-success-300);
+}
+.bg-color-success-400 {
+  background-color: var(--color-success-400);
+}
+.bg-color-success-500 {
+  background-color: var(--color-success-500);
+}
+.bg-color-success-600 {
+  background-color: var(--color-success-600);
+}
+.bg-color-success-700 {
+  background-color: var(--color-success-700);
+}
+.bg-color-success-800 {
+  background-color: var(--color-success-800);
+}
+.bg-color-success-900 {
+  background-color: var(--color-success-900);
+}
+.bg-color-info-100 {
+  background-color: var(--color-info-100);
+}
+.bg-color-info-200 {
+  background-color: var(--color-info-200);
+}
+.bg-color-info-300 {
+  background-color: var(--color-info-300);
+}
+.bg-color-info-400 {
+  background-color: var(--color-info-400);
+}
+.bg-color-info-500 {
+  background-color: var(--color-info-500);
+}
+.bg-color-info-600 {
+  background-color: var(--color-info-600);
+}
+.bg-color-info-700 {
+  background-color: var(--color-info-700);
+}
+.bg-color-info-800 {
+  background-color: var(--color-info-800);
+}
+.bg-color-info-900 {
+  background-color: var(--color-info-900);
+}
+.bg-color-warning-100 {
+  background-color: var(--color-warning-100);
+}
+.bg-color-warning-200 {
+  background-color: var(--color-warning-200);
+}
+.bg-color-warning-300 {
+  background-color: var(--color-warning-300);
+}
+.bg-color-warning-400 {
+  background-color: var(--color-warning-400);
+}
+.bg-color-warning-500 {
+  background-color: var(--color-warning-500);
+}
+.bg-color-warning-600 {
+  background-color: var(--color-warning-600);
+}
+.bg-color-warning-700 {
+  background-color: var(--color-warning-700);
+}
+.bg-color-warning-800 {
+  background-color: var(--color-warning-800);
+}
+.bg-color-warning-900 {
+  background-color: var(--color-warning-900);
+}
+.bg-color-danger-100 {
+  background-color: var(--color-danger-100);
+}
+.bg-color-danger-200 {
+  background-color: var(--color-danger-200);
+}
+.bg-color-danger-300 {
+  background-color: var(--color-danger-300);
+}
+.bg-color-danger-400 {
+  background-color: var(--color-danger-400);
+}
+.bg-color-danger-500 {
+  background-color: var(--color-danger-500);
+}
+.bg-color-danger-600 {
+  background-color: var(--color-danger-600);
+}
+.bg-color-danger-700 {
+  background-color: var(--color-danger-700);
+}
+.bg-color-danger-800 {
+  background-color: var(--color-danger-800);
+}
+.bg-color-danger-900 {
+  background-color: var(--color-danger-900);
 }
 
 *,
@@ -143,21 +286,39 @@ body {
   text-align: center;
 }
 
+.sg-colors-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .sg-colors {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.sg-colors.primary > div {
+.sg-colors > div {
+  color: #000;
   width: 200px;
   height: 50px;
-  color: #000;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
+  margin-bottom: 1em;
 }
-.sg-colors.primary .color-primary-100 {
-  background: var(--color-primary-100);
+.sg-colors h3 {
+  margin-bottom: 0.5em;
+}
+.sg-colors.primary > div {
+  color: #5ab392;
+}
+.sg-colors.success > div {
+  color: #000;
+}
+.sg-colors.danger > div {
+  color: #89702a;
 }
 
 /*# sourceMappingURL=styles.css.map */
