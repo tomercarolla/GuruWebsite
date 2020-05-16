@@ -7,8 +7,9 @@
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&display=swap"
           rel="stylesheet">
     <link href="styles.css" rel="stylesheet"/>
@@ -95,6 +96,173 @@
     <button class="guru-bg-warning">עוד פרטים...</button>
 </div>
 
+<section class="questions">
+
+    <div class="item">
+
+        <!-- Question 1 go to Question 2 and Back -->
+        <input type="checkbox" class="answer-radio" id="question1Answer1GoToQuestion2AndBackTo1"/>
+        <input type="checkbox" class="answer-radio" id="question1Answer2GoToQuestion2_1AndBackTo1"/>
+        <input type="checkbox" class="answer-radio" id="question1Answer3GoToQuestion2_2AndBackTo1"/>
+
+        <!-- Answer 1 of Q-1: Question 2 go to Question 3 and Back -->
+        <input type="checkbox" class="answer-radio" id="a1q1Question2Answer1GoToQuestion3_1AndBackTo2"/>
+        <input type="checkbox" class="answer-radio"
+               id="a1q1question2Answer2GoToQuestion3_2AndBackTo2"/>
+        <input type="checkbox" class="answer-radio question-1__answer-1"
+               id="a1q1question2Answer3GoToQuestion3_2AndBackTo2"/>
+
+        <!-- Question 3 -->
+        <input type="checkbox" class="answer-radio" id="answerOneQuestionThree"/>
+        <input type="checkbox" class="answer-radio" id="answerTwoQuestionThree"/>
+        <input type="checkbox" class="answer-radio" id="answerThreeQuestionThree"/>
+
+
+
+        <!-- Question 1 Start -->
+        <section class="answer__slide question-1" id="questionOne">
+            <h1 class="question-header">
+                1- מה אתה רוצה לאכול?
+            </h1>
+
+            <label class="answer-indicator" for="question1Answer1GoToQuestion2AndBackTo1">
+                פיצה
+            </label>
+            <label class="answer-indicator" for="question1Answer2GoToQuestion2_1AndBackTo1">
+                פסטה
+            </label>
+            <label class="answer-indicator" for="question1Answer3GoToQuestion2_2AndBackTo1">
+                קינוח
+            </label>
+        </section>
+        <!-- Question 1 Start -->
+
+        <!-- Question 2 Start -->
+        <!-- A1 of Q1 -->
+        <section class="answer__slide next-question question-2" id="questionTwoAnswerOneOfQuestionOne">
+            <h1 class="question-header">
+                2- איזה פיצה?
+            </h1>
+
+            <label class="answer-indicator" for="a1q1Question2Answer1GoToQuestion3_1AndBackTo2">
+                רגילה
+            </label>
+            <label class="answer-indicator" for="a1q1question2Answer2GoToQuestion3_2AndBackTo2">
+                עם תוספות
+            </label>
+            <label class="answer-indicator" for="a1q1question2Answer3GoToQuestion3_2AndBackTo2">
+                בלי תוספות
+            </label>
+
+            <label class="back-btn" for="question1Answer1GoToQuestion2AndBackTo1">
+                חזור
+            </label>
+        </section>
+        <!-- A1 of Q1 -->
+
+        <!-- A2 of Q1 -->
+        <section class="answer__slide next-question question-2" id="questionTwoAnswerTwoOfQuestionOne">
+            <h1 class="question-header">
+                2- מה אתה רוצה?
+            </h1>
+
+            <label class="answer-indicator" for="">
+                1- בננה
+            </label>
+            <label class="answer-indicator" for="">
+                2- פתוח
+            </label>
+            <label class="answer-indicator" for="">
+                3- שוקולד
+            </label>
+
+            <label class="back-btn" for="answer2GoToQuestion2-1AndBackTo1">
+                חזור
+            </label>
+        </section>
+        <!-- A2 of Q1 -->
+
+        <!-- A3 of Q1 -->
+        <section class="answer__slide next-question question-2" id="questionTwoAnswerThreeOfQuestionOne">
+            <h1 class="question-header">
+                2- מה אתה עושה?
+            </h1>
+
+            <label class="answer-indicator" for="">
+                יושן
+            </label>
+            <label class="answer-indicator" for="">
+                אוכל
+            </label>
+            <label class="answer-indicator" for="">
+                נוהג
+            </label>
+
+            <label class="back-btn" for="answer3GoToQuestion2-2AndBackTo1">
+                חזור
+            </label>
+        </section>
+        <!-- A3 of Q1 -->
+        <!-- Question 2 End -->
+
+        <!-- Question 3 Start -->
+        <section class="answer__slide next-question question-3" id="questionThreeAnswerOneOfQuestionTwo">
+            <h1 class="question-header">
+                תוצאה
+            </h1>
+
+            <div class="result">
+                פיצה רגילה
+            </div>
+        </section>
+
+        <section class="answer__slide next-question question-3" id="questionThreeAnswerTwoOfQuestionTwo">
+            <h1 class="question-header">
+                3- איזה תוספות?
+            </h1>
+
+            <label class="answer-indicator" for="">
+                זיתים
+            </label>
+            <label class="answer-indicator" for="">
+                תירס
+            </label>
+            <label class="answer-indicator" for="">
+                פפרוני
+            </label>
+
+            <label class="back-btn" for="a1q1question2Answer2GoToQuestion3_2AndBackTo2">
+                חזור
+            </label>
+        </section>
+
+        <section class="answer__slide next-question question-3" id="questionThreeAnswerThreeOfQuestionTwo">
+            <h1 class="question-header">
+                3- אתה בטוח?
+            </h1>
+
+            <label class="answer-indicator" for="answerOneQuestionThree">
+                כן
+            </label>
+            <label class="answer-indicator" for="a1q1question2Answer3GoToQuestion3_2AndBackTo2">
+                לא
+            </label>
+        </section>
+        <!-- Question 3 End -->
+
+        <!-- Final Result After Question 3 Start -->
+        <section class="answer__slide next-question question-3" id="resultQuestionThreeAnswerOne">
+            <h1 class="question-header">
+                תוצאה
+            </h1>
+
+            <div class="result">פיצה ללא תוספות</div>
+        </section>
+
+    </div>
+
+</section>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -103,8 +271,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"-->
+<!--        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"-->
+<!--        crossorigin="anonymous"></script>-->
 </body>
 </html>
