@@ -41,19 +41,19 @@ body {
 
   &.primary {
     > div {
-      color: #5ab392;
+      color: #000;
     }
   }
 
   &.success {
     > div {
-      color: #000;
+      color: #58a306;
     }
   }
 
   &.danger {
     > div {
-      color: #89702a;
+      color: #000;
     }
   }
 }
@@ -133,13 +133,20 @@ body {
   }
 }
 
-.questions {
+.typography {
+  margin-bottom: 2em;
   direction: rtl;
+
+  div, h1, h2, h3, h4, label, p {
+    margin-bottom: 1em;
+  }
+}
+
+.questions {
   width: 500px;
   height: 200px;
   border-radius: 20px;
   border: 2px solid var(--color-warning-500);
-  margin-left: auto;
   padding: 20px;
   margin-bottom: 50px;
 
@@ -155,7 +162,7 @@ body {
     margin-bottom: .3em;
   }
 
-  .answer__slide {
+  .answer-slide {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -188,7 +195,7 @@ body {
     .back-btn {
       position: absolute;
       top: 11px;
-      left: 11px;
+      right: 11px;
       width: 50px;
       height: 30px;
       display: flex;
@@ -202,35 +209,92 @@ body {
     }
   }
 
-  #question1Answer1GoToQuestion2AndBackTo1:checked ~ #questionTwoAnswerOneOfQuestionOne {
+  #goToQuestion2Answer1:checked ~ #question2Answer1 {
     display: block
   }
 
-  #question1Answer2GoToQuestion2_1AndBackTo1:checked ~ #questionTwoAnswerTwoOfQuestionOne {
-    display: block
-  }
-
-  #question1Answer3GoToQuestion2_2AndBackTo1:checked ~ #questionTwoAnswerThreeOfQuestionOne {
+  #goToQuestion2Answer2:checked ~ #question2Answer2 {
     display: block;
   }
 
-  #a1q1Question2Answer1GoToQuestion3_1AndBackTo2:checked ~ #questionThreeAnswerOneOfQuestionTwo {
+  #goToQuestion2Answer3:checked ~ #question2Answer3 {
     display: block;
   }
 
-  #a1q1question2Answer2GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerTwoOfQuestionTwo {
+  #goToQuestion3Answer1:checked ~ #pizzaResultQuestion2Answer1 {
     display: block;
   }
 
-  #a1q1question2Answer3GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerThreeOfQuestionTwo {
+  #goToQuestion3Answer2:checked ~ #pizzaResultQuestion2Answer2 {
     display: block;
   }
 
-  #answerOneQuestionThree:checked ~ #resultQuestionThreeAnswerOne {
+  #goToQuestion3Answer3:checked ~ #pizzaQuestion3Answer1 {
     display: block;
   }
 
-  .answer-radio {
+  #pizzaGoToResultAnswer1:checked ~ #pizzaResultQuestion3Answer1 {
+    display: block;
+  }
+
+  #pastaGoToResultAnswer1:checked ~ #question3Answer1 {
+    display: block;
+  }
+
+  #pastaGoToResultAnswer1:checked ~ #question3Answer2 {
+    display: block;
+  }
+
+  #pastaGoToResultAnswer1:checked ~ #question3Answer3 {
+    display: block;
+  }
+
+  //#question1Answer2GoToQuestion2_1AndBackTo1:checked ~ #questionTwoAnswerTwoOfQuestionOne {
+  //  display: block
+  //}
+
+  //#question1Answer3GoToQuestion2_2AndBackTo1:checked ~ #questionTwoAnswerThreeOfQuestionOne {
+  //  display: block;
+  //}
+  //
+  //#a1q1Question2Answer1GoToQuestion3_1AndBackTo2:checked ~ #questionThreeAnswerOneOfQuestionTwo {
+  //  display: block;
+  //}
+  //
+  //#a1q1question2Answer2GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerTwoOfQuestionTwo {
+  //  display: block;
+  //}
+  //
+  //#a1q1question2Answer3GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerThreeOfQuestionTwo {
+  //  display: block;
+  //}
+  //
+  //#answerOneQuestionThree:checked ~ #resultQuestionThreeAnswerOne {
+  //  display: block;
+  //}
+
+  .answer-check {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

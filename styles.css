@@ -1,49 +1,49 @@
 :root {
-  --color-primary-100: #E7F4F6;
-  --color-primary-200: #D1E9EE;
-  --color-primary-300: #A7C3CD;
-  --color-primary-400: #78909B;
-  --color-primary-500: #3E4F59;
-  --color-primary-600: #2D3F4C;
-  --color-primary-700: #1F2F40;
-  --color-primary-800: #132133;
-  --color-primary-900: #0B172A;
-  --color-success-100: #E6FCF5;
-  --color-success-200: #CDFAEF;
-  --color-success-300: #B0F0E5;
-  --color-success-400: #96E1DB;
-  --color-success-500: #72CCCD;
-  --color-success-600: #53A7B0;
-  --color-success-700: #398393;
-  --color-success-800: #246076;
-  --color-success-900: #154762;
-  --color-info-100: #CAFAEA;
-  --color-info-200: #97F6DF;
-  --color-info-300: #60E6D0;
-  --color-info-400: #38CDC2;
-  --color-info-500: #06AAAC;
-  --color-info-600: #048593;
-  --color-info-700: #03657B;
-  --color-info-800: #014963;
-  --color-info-900: #013552;
-  --color-warning-100: #FEF7D8;
-  --color-warning-200: #FEEDB2;
-  --color-warning-300: #FEE08C;
-  --color-warning-400: #FED36F;
-  --color-warning-500: #FEBE40;
-  --color-warning-600: #DA9A2E;
-  --color-warning-700: #B67920;
-  --color-warning-800: #935B14;
-  --color-warning-900: #79450C;
-  --color-danger-100: #F4F4F5;
-  --color-danger-200: #E9E9EC;
-  --color-danger-300: #C4C4C7;
-  --color-danger-400: #8D8D90;
-  --color-danger-500: #454547;
-  --color-danger-600: #32323D;
-  --color-danger-700: #222233;
-  --color-danger-800: #161629;
-  --color-danger-900: #0D0D22;
+  --color-primary-100: #DEFAFB;
+  --color-primary-200: #BDF2F7;
+  --color-primary-300: #97DBE8;
+  --color-primary-400: #76BDD1;
+  --color-primary-500: #4B95B3;
+  --color-primary-600: #367699;
+  --color-primary-700: #255A80;
+  --color-primary-800: #174067;
+  --color-primary-900: #0E2D55;
+  --color-success-100: #FFEFEB;
+  --color-success-200: #FFDBD8;
+  --color-success-300: #FFC4C5;
+  --color-success-400: #FFB6BD;
+  --color-success-500: #FF9EB1;
+  --color-success-600: #DB7391;
+  --color-success-700: #B74F77;
+  --color-success-800: #933261;
+  --color-success-900: #7A1E53;
+  --color-info-100: #E6FEFF;
+  --color-info-200: #CEFAFF;
+  --color-info-300: #B5F3FF;
+  --color-info-400: #A3EAFF;
+  --color-info-500: #85DCFF;
+  --color-info-600: #61AFDB;
+  --color-info-700: #4386B7;
+  --color-info-800: #2A6093;
+  --color-info-900: #19447A;
+  --color-warning-100: #FEFCD0;
+  --color-warning-200: #FDF9A3;
+  --color-warning-300: #F9F474;
+  --color-warning-400: #F4EC51;
+  --color-warning-500: #EDE21A;
+  --color-warning-600: #CBC113;
+  --color-warning-700: #AAA00D;
+  --color-warning-800: #898008;
+  --color-warning-900: #716904;
+  --color-danger-100: #FBFAE0;
+  --color-danger-200: #F7F5C2;
+  --color-danger-300: #E8E59E;
+  --color-danger-400: #D1CD7E;
+  --color-danger-500: #B3AE54;
+  --color-danger-600: #99943D;
+  --color-danger-700: #807B2A;
+  --color-danger-800: #67621A;
+  --color-danger-900: #555010;
 }
 
 :root {
@@ -276,10 +276,55 @@ fieldset {
 }
 
 body {
-  font-family: "Assistant", sans-serif;
+  font-family: "Heebo", sans-serif;
   font-weight: 400;
   line-height: 1.3;
   text-align: initial;
+}
+
+.font-super-duper {
+  font-size: 42px;
+  font-weight: 300;
+}
+
+.font-super {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.font-big {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.font-heading-1 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.font-heading-2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.font-heading-3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.font-heading-4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.font-label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.font-regular {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 body {
@@ -316,13 +361,13 @@ body {
   margin-bottom: 0.5em;
 }
 .sg-colors.primary > div {
-  color: #5ab392;
-}
-.sg-colors.success > div {
   color: #000;
 }
+.sg-colors.success > div {
+  color: #58a306;
+}
 .sg-colors.danger > div {
-  color: #89702a;
+  color: #000;
 }
 
 .buttons-container {
@@ -392,13 +437,19 @@ body {
   background: var(--color-warning-400);
 }
 
-.questions {
+.typography {
+  margin-bottom: 2em;
   direction: rtl;
+}
+.typography div, .typography h1, .typography h2, .typography h3, .typography h4, .typography label, .typography p {
+  margin-bottom: 1em;
+}
+
+.questions {
   width: 500px;
   height: 200px;
   border-radius: 20px;
   border: 2px solid var(--color-warning-500);
-  margin-left: auto;
   padding: 20px;
   margin-bottom: 50px;
 }
@@ -412,7 +463,7 @@ body {
   padding: 10px;
   margin-bottom: 0.3em;
 }
-.questions .answer__slide {
+.questions .answer-slide {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -420,28 +471,28 @@ body {
   background: #FFF;
   height: 167px;
 }
-.questions .answer__slide.next-question {
+.questions .answer-slide.next-question {
   display: none;
 }
-.questions .answer__slide .answer-indicator {
+.questions .answer-slide .answer-indicator {
   display: block;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   padding: 8px;
 }
-.questions .answer__slide .answer-indicator:hover {
+.questions .answer-slide .answer-indicator:hover {
   background-color: var(--color-success-400);
 }
-.questions .answer__slide .result {
+.questions .answer-slide .result {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 105px;
 }
-.questions .answer__slide .back-btn {
+.questions .answer-slide .back-btn {
   position: absolute;
   top: 11px;
-  left: 11px;
+  right: 11px;
   width: 50px;
   height: 30px;
   display: flex;
@@ -453,28 +504,37 @@ body {
   color: #FFF;
   cursor: pointer;
 }
-.questions #question1Answer1GoToQuestion2AndBackTo1:checked ~ #questionTwoAnswerOneOfQuestionOne {
+.questions #goToQuestion2Answer1:checked ~ #question2Answer1 {
   display: block;
 }
-.questions #question1Answer2GoToQuestion2_1AndBackTo1:checked ~ #questionTwoAnswerTwoOfQuestionOne {
+.questions #goToQuestion2Answer2:checked ~ #question2Answer2 {
   display: block;
 }
-.questions #question1Answer3GoToQuestion2_2AndBackTo1:checked ~ #questionTwoAnswerThreeOfQuestionOne {
+.questions #goToQuestion2Answer3:checked ~ #question2Answer3 {
   display: block;
 }
-.questions #a1q1Question2Answer1GoToQuestion3_1AndBackTo2:checked ~ #questionThreeAnswerOneOfQuestionTwo {
+.questions #goToQuestion3Answer1:checked ~ #pizzaResultQuestion2Answer1 {
   display: block;
 }
-.questions #a1q1question2Answer2GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerTwoOfQuestionTwo {
+.questions #goToQuestion3Answer2:checked ~ #pizzaResultQuestion2Answer2 {
   display: block;
 }
-.questions #a1q1question2Answer3GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerThreeOfQuestionTwo {
+.questions #goToQuestion3Answer3:checked ~ #pizzaQuestion3Answer1 {
   display: block;
 }
-.questions #answerOneQuestionThree:checked ~ #resultQuestionThreeAnswerOne {
+.questions #pizzaGoToResultAnswer1:checked ~ #pizzaResultQuestion3Answer1 {
   display: block;
 }
-.questions .answer-radio {
+.questions #pastaGoToResultAnswer1:checked ~ #question3Answer1 {
+  display: block;
+}
+.questions #pastaGoToResultAnswer1:checked ~ #question3Answer2 {
+  display: block;
+}
+.questions #pastaGoToResultAnswer1:checked ~ #question3Answer3 {
+  display: block;
+}
+.questions .answer-check {
   display: none;
 }
 
