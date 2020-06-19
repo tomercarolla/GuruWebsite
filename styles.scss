@@ -4,6 +4,10 @@
 //ייבוא של פונטים
 @import 'styles/local';
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -114,11 +118,35 @@
 .cover-img {
   background-image: url('images/homepage-image.jpeg');
   height: 100%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  padding-top: 200px;
+  padding-top: 160px;
+  background-position-y: -100px;
+
+  h1 {
+    height: max-content;
+    color: var(--color-primary-900);
+    padding-left: 50px;
+  }
+
+  .cover-text {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 25px;
+      background-image: url('images/cover-smile copy.png');
+      width: 45px;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 40px;
+    }
+  }
 
   .twist-text {
     font-weight: 900;
