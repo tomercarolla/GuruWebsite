@@ -1,0 +1,81 @@
+.about-cover {
+  padding-top: 55px;
+}
+.about-cover img {
+  width: 100%;
+}
+
+.about-container__paragraph {
+  max-width: 700px;
+}
+.about-container__paragraph p {
+  margin-top: 0.5em;
+  line-height: 1.5;
+}
+.about-container__profile {
+  display: flex;
+  flex-direction: column;
+}
+.about-container__profile .profiles {
+  display: flex;
+  align-items: center;
+}
+.about-container__profile .profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-container__profile .profile-container img {
+  width: 200px;
+}
+.about-container__profile .profile-container p {
+  font-size: 16px;
+}
+.about-container__web-info .courses-list {
+  margin-top: 1em;
+}
+.about-container__web-info p {
+  margin-top: 1em;
+}
+.about-container__link .links-list {
+  margin-top: 1em;
+}
+.about-container h1 {
+  margin-bottom: 1em;
+}
+.about-container a {
+  color: blue;
+}
+.about-container a:hover {
+  text-decoration: underline;
+}
+.about-container .box {
+  margin-top: 2em;
+}
+.about-container .hit-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .hit-links > a {
+  margin-bottom: 1em;
+}
+.about-container .duck-icon-list li {
+  position: relative;
+  padding-right: 25px;
+  margin-bottom: 8px;
+}
+.about-container .duck-icon-list li:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -3px;
+  background: url("images/logo-duck.png") no-repeat center center;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=about-styles.css.map */
