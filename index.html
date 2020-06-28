@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <link href="styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="carousel-styles.css">
 
     <title>טוויסט עמוד הבית</title>
 </head>
@@ -84,7 +85,7 @@
                 </a>
             </div>
             <div class="link-container__middle">
-                <a href="#">
+                <a href="#" class="middle-link">
                     <span class="first-title">מחשבים מסלול</span>
                     <span class="second-title">תוכנית חניכה</span>
                 </a>
@@ -101,6 +102,43 @@
     <section class="padding-section carousel-container">
         <img class="clips-image" src="images/clips-group.png" alt="">
         <h1 class="font-super-duper carousel-container__title">ת'שמעו קטע...</h1>
+
+        <div class="homepage-carousel carousel">
+            <input type="radio" class="carousel__activator" name="carousel" id="firstStage" checked="checked">
+            <input type="radio" class="carousel__activator" name="carousel" id="secondStage">
+            <input type="radio" class="carousel__activator" name="carousel" id="thirdStage">
+
+            <ul class="carousel__stages font-super">
+                <li class="carousel__stages--slide">
+                    "יש לי 3 אנשי צוות שעובדים בארה״ב ואני בישראל והם צריכים לעשות את הדברים בדיוק כמו שאני מתכוון"
+                </li>
+                <li class="carousel__stages--slide">
+                    "יש לי עובד ותיק בעל נסיון רב ואני לא יודע איך לדבר איתו על הדברים שהוא צריך לשפר"
+                </li>
+                <li class="carousel__stages--slide">
+                    "כשניסיתי להעביר משוב לאחד העובדים שלי, הוא לא שיתף פעולה וישר תקף אותי"
+                </li>
+            </ul>
+
+            <div class="carousel__arrows">
+                <label for="secondStage" class="arrow carousel__arrows--next"></label>
+            </div>
+            <div class="carousel__arrows">
+                <label for="firstStage" class="arrow carousel__arrows--previous"></label>
+                <label for="thirdStage" class="arrow carousel__arrows--next"></label>
+            </div>
+            <div class="carousel__arrows">
+                <label for="secondStage" class="arrow carousel__arrows--previous"></label>
+            </div>
+
+            <div class="carousel__dots">
+                <label for="firstStage" class="carousel__dots--dot"></label>
+                <label for="secondStage" class="carousel__dots--dot"></label>
+                <label for="thirdStage" class="carousel__dots--dot"></label>
+            </div>
+
+            <button class="btn font-heading-1 not-allowed">ומה עשיתם?</button>
+        </div>
     </section>
 
     <footer>

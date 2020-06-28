@@ -566,6 +566,8 @@ footer .site-map-container .about-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
 }
 .what-we-do .link-container div a:after {
   content: "";
@@ -576,6 +578,9 @@ footer .site-map-container .about-link {
   background-size: cover;
   z-index: 1;
 }
+.what-we-do .link-container div a:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
 .what-we-do .link-container div a:hover:after {
   background: url("images/label-blue.png") no-repeat center center;
   background-size: cover;
@@ -585,6 +590,9 @@ footer .site-map-container .about-link {
 }
 .what-we-do .link-container div a:hover .second-title {
   display: block;
+}
+.what-we-do .link-container div a.middle-link:hover {
+  transform: scale(1.2) rotate(5deg);
 }
 .what-we-do .link-container div a span {
   z-index: 99;
@@ -630,18 +638,22 @@ footer .site-map-container .about-link {
 }
 
 .carousel-container {
-  height: 300px;
+  height: 370px;
   background-color: #FFF;
   position: relative;
+  padding: 0;
 }
 .carousel-container__title {
   color: var(--color-primary-900);
+  padding: 0 20px;
+  margin: 30px 0;
 }
 .carousel-container .clips-image {
   position: absolute;
-  top: -108px;
-  left: 50px;
+  top: -15px;
+  left: 80px;
   width: 450px;
+  z-index: 99;
 }
 
 .style-guide {
