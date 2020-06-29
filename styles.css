@@ -424,6 +424,9 @@ body {
 .header__list li:hover {
   background: var(--color-primary-100);
 }
+.header__list li.active {
+  background: var(--color-primary-100);
+}
 .header__list li a {
   width: 100%;
   height: 100%;
