@@ -1,0 +1,32 @@
+.how-it-works {
+  background: url("images/open-bg.jpg") no-repeat center center;
+  height: 600px;
+  background-size: cover;
+}
+.how-it-works__content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+.how-it-works__content .top {
+  padding-top: 140px;
+  padding-left: 110px;
+  max-width: 530px;
+}
+.how-it-works__content .top p:last-child {
+  margin-top: 20px;
+}
+.how-it-works__content .bottom {
+  padding-left: 225px;
+  padding-top: 80px;
+}
+
+.conversation-accordion {
+  min-height: 170px;
+}
+.conversation-accordion h2 {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=open-conversation-styles.css.map */

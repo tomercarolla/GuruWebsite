@@ -1,0 +1,35 @@
+.how-it-works {
+  background: url('images/open-bg.jpg') no-repeat center center;
+  height: 600px;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+
+    .top {
+      padding-top: 140px;
+      padding-left: 110px;
+      max-width: 530px;
+
+      p:last-child {
+        margin-top: 20px;
+      }
+    }
+
+    .bottom {
+      padding-left: 225px;
+      padding-top: 80px;
+    }
+  }
+}
+
+.conversation-accordion {
+  min-height: 170px;
+
+  h2 {
+    font-weight: 600;
+  }
+}

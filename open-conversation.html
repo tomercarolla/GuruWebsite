@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <link href="styles.css" rel="stylesheet"/>
+    <link href="open-conversation-styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="accorditon-styles.css">
 
     <title>טוויסט - שיחת פתיחה</title>
 </head>
@@ -28,7 +30,7 @@
                 <li class="open-progress active">
                     <a href="#">תהליכים בחניכה</a>
                     <ul class="open-menu">
-                        <li  class="active"><a href="#">שיחת פתיחה</a></li>
+                        <li class="active"><a href="#">שיחת פתיחה</a></li>
                         <li><a href="initiation-program.html">תוכנית חניכה</a></li>
                         <li><a href="feedback.html">משוב תקופתי</a></li>
                         <li>
@@ -58,6 +60,111 @@
             </ul>
         </nav>
     </header>
+
+    <section class="cover-img cover-img__conversation" id="coverImgContainer">
+        <h1 class="font-super-duper">שיחת פתיחה</h1>
+
+        <div class="text font-super">
+            רושם ראשוני לא עושים פעמיים
+        </div>
+    </section>
+
+    <section class="sub-menu" id="subMenuContainer">
+        <a href="#" class="link">פתיחה</a>
+        <a href="#" class="link">סרטון</a>
+        <a href="#" class="link">מבנה שיחה</a>
+        <a href="#" class="link">תקציר להורדה</a>
+    </section>
+
+    <section class="how-it-works">
+        <div class="how-it-works__content">
+            <div class="top font-big">
+                <p>שיחת פתיחה היא נקודת ההתחלה לכל תהליך חניכה וליווי של עובד.</p>
+                <p>כל מה שצריך זה good vibes ומקום שקט</p>
+                <p>שבו על כוס קפה ותתחילו להכיר</p>
+            </div>
+            <div class="bottom font-super-duper">
+                איך זה עובד?
+            </div>
+        </div>
+    </section>
+
+    <section class="conversation-accordion accordion">
+
+        <h2 class="font-super">מה היה פה?</h2>
+        <div class="tabs-container">
+            <div class="accordion__tab">
+                <div class="number">1</div>
+                <input type="checkbox" id="tabOne">
+                <label class="font-heading-1" for="tabOne">
+                    יאללה התחלנו
+                    <span class="font-heading-4">אז רגע, מה אומרים פה?</span>
+                </label>
+                <div class="accordion__tab--content">
+                    <h2 class="font-heading-2">שיחת פתיחה</h2>
+
+                    <ol class="list">
+                        <li>
+                            <b class="font-heading-3">הפשרה / "שבירת הקרח"</b> - נדבר קלילות לפני שנגיע לרגע הרשמי.
+                        </li>
+                        <li>
+                            <b class="font-heading-3">הצגת מטרות השיחה</b> - "חשוב לי שנכיר את השני טוב יותר ונעבור תהליך חניכה ולמידה משותף שיביא אותנו להצלחה משותפת".
+                        </li>
+                        <li>
+                            <b class="font-heading-3">תיאום ציפיות</b> לשיחה ולתהליך החניכה.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion__tab">
+                <div class="number">2</div>
+                <input type="checkbox" id="tabTwo">
+                <label class="font-heading-1" for="tabTwo">
+                    התאכלס
+                    <span class="font-heading-4">תזכירו לי מה זה?</span>
+                </label>
+                <div class="accordion__tab--content">
+                    <h2 class="font-heading-2">גוף השיחה</h2>
+
+                    <ol class="list">
+                        <li>
+                            נספר על <b> עצמינו בקוצרה</b>.
+                        </li>
+                        <li>
+                            נבקש מהעובד <b>לספר על עצמו</b>.
+                        </li>
+                        <li>
+                            נקודות <b>חוזר וחולשה</b> ומהם היעדים האישיים של העובד.
+                        </li>
+                        <li>
+                            הצעת <b>יעדים אישיים</b> ע"י הונך.
+                        </li>
+                        <li>
+                            במידה של <b>אי הסכמה</b> על היעדים מצד הנחנך (העובד) עלינו להסביר לעובד <b>מה מטרת המשימה</b> שלו ולמה אלו הם היעדים.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion__tab">
+                <div class="number">3</div>
+                <input type="checkbox" id="tabThird">
+                <label class="font-heading-1" for="tabThird">
+                    אז זהו?
+                    <span class="font-heading-4">נבדוק שלא שכחתי כלום</span>
+                </label>
+                <div class="accordion__tab--content">
+                    <h2 class="font-heading-2">סיכום</h2>
+
+                    <div class="list">
+                        כעט עלינו לבצע סגירה של הכל ולוודא שבאמת שני הצדדים <b>מדברים על אותם הדברים</b><br>
+                        # חשוב לציין כי <b>שלב זה הוא קריטי!</b><br>
+                        במידה והמעסיק/החונך הבין יעדים x והנחנך הבין יעדים y <br>
+                        <b>כל התהליך החניכה יראה אחרת ושגוי וככה גם התוצאות.</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="logo-container"><img src="images/logo_twist.png" alt=""></div>
@@ -93,5 +200,7 @@
         </div>
     </footer>
 </section>
+
+<script src="js/script.js"></script>
 </body>
 </html>

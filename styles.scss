@@ -5,6 +5,7 @@
 @import 'styles/local';
 
 //general CSS
+
 * {
   &::-webkit-scrollbar-track {
     background-color: transparent;
@@ -54,6 +55,7 @@ body {
   background: #FFF;
   display: flex;
   height: 55px;
+  font-size: 16px;
   box-shadow: 0 3px 4px -4px black;
   position: sticky;
   top: 0;
@@ -147,11 +149,11 @@ body {
     position: absolute;
     top: 55px;
     right: 0;
-    width: 133px;
+    width: 147px;
     box-shadow: 0 0 6px -4px rgba(0, 0, 0, 1);
 
     &.challenge-link {
-      width: 128px;
+      width: 140px;
     }
 
     li {
@@ -163,19 +165,45 @@ body {
 }
 
 .cover-img {
-  background-image: url('images/homepage-image.jpg');
-  height: 660px;
+  height: 885px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  background-position-y: bottom;
   background-attachment: fixed;
 
-  h1 {
-    height: max-content;
-    color: var(--color-primary-900);
-    padding-left: 50px;
+  &__homepage {
+    background-image: url('images/homepage-image.jpg');
+    background-position-y: bottom;
+
+    h1 {
+      height: max-content;
+      color: var(--color-primary-900);
+      padding-left: 50px;
+    }
+  }
+
+  &__conversation {
+    background-image: url('images/conversation-cover.jpg');
+    background-size: 1400px;
+    background-position-x: 250px;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: #000;
+    }
+
+    .text {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin-bottom: 300px;
+      margin-top: 40px;
+    }
   }
 
   .cover-text {
@@ -198,6 +226,35 @@ body {
 
   .twist-text {
     font-weight: 900;
+  }
+}
+
+.sub-menu {
+  height: 50px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 460px;
+
+  &.fixed {
+    position: fixed;
+    top: 55px;
+    width: 1280px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:not(:last-child):after {
+      content: '|';
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -403,6 +460,8 @@ footer {
     z-index: 99;
   }
 }
+
+
 
 $questionTransition: 0.5s;
 
