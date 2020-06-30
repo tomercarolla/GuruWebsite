@@ -1,0 +1,38 @@
+.init-program-what {
+  background: url('images/init-program-what.png') no-repeat center center;
+  background-size: cover;
+  height: 480px;
+
+  &__content {
+    max-width: 395px;
+    margin-top: 60px;
+
+    .top,
+    .bottom {
+      display: flex;
+      align-items: center;
+
+      .number {
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: 16px;
+      }
+
+      .text {
+        line-height: 1.5;
+      }
+    }
+
+    .bottom {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    color: var(--color-success-700);
+
+    span {
+      color: #000;
+    }
+  }
+}

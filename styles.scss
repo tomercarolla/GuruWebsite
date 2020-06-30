@@ -165,16 +165,15 @@ body {
 }
 
 .cover-img {
-  height: 885px;
+  height: 610px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  background-attachment: fixed;
 
   &__homepage {
     background-image: url('images/homepage-image.jpg');
-    background-position-y: bottom;
+    background-position-y: -50px;
 
     h1 {
       height: max-content;
@@ -185,10 +184,9 @@ body {
 
   &__conversation {
     background-image: url('images/conversation-cover.jpg');
-    background-size: 1400px;
-    background-position-x: 250px;
     align-items: center;
     flex-direction: column;
+    background-position-y: -150px;
 
     h1 {
       color: #000;
@@ -206,9 +204,32 @@ body {
     }
   }
 
+  &__init-program {
+    background: url('images/init-program-cover.jpg') no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+      color: #000;
+      padding-bottom: 250px;
+    }
+
+    .text {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin-bottom: 70px;
+    }
+  }
+
   .cover-text {
     position: relative;
-    padding-top: 190px;
+    padding-top: 160px;
 
     &:after {
       position: absolute;
@@ -236,6 +257,10 @@ body {
   justify-content: space-around;
   padding: 0 460px;
 
+  &__conversation {
+    padding: 0 520px;
+  }
+
   &.fixed {
     position: fixed;
     top: 55px;
@@ -255,6 +280,24 @@ body {
       top: 50%;
       transform: translateY(-50%);
     }
+  }
+}
+
+.download-file-container {
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+  }
+
+  &__img {
+    width: 25px;
+    height: 100%;
+  }
+
+  .download-link {
+    display: inline-flex;
+    align-items: center;
   }
 }
 
@@ -296,7 +339,7 @@ footer {
 //homepage CSS
 
 .padding-section {
-  padding: 20px;
+  padding: 20px 67px 20px;
 }
 
 .what-is-twist {
@@ -304,6 +347,9 @@ footer {
   background: url(images/clips.png) no-repeat top center;
   background-size: 165px;
   background-position-x: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__title {
     color: var(--color-success-500);
@@ -313,21 +359,24 @@ footer {
     color: var(--color-primary-900);
     width: 640px;
     margin-top: 25px;
+    line-height: 1.5;
+    padding-bottom: 10px;
   }
 }
 
 .what-we-do {
   background: url('images/what-we-do.jpg') no-repeat center right;
-  height: 610px;
+  height: 540px;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding-right: 590px;
+  padding-top: 45px;
 
   &__title {
     color: var(--color-primary-900);
-    padding-left: 350px;
   }
 
   .link-container {
@@ -336,8 +385,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 240px;
-    margin-top: 40px;
+    margin-top: 20px;
 
     div {
       a {
@@ -444,11 +492,9 @@ footer {
   height: 370px;
   background-color: #FFF;
   position: relative;
-  padding: 0;
 
   &__title {
     color: var(--color-primary-900);
-    padding: 0 20px;
     margin: 30px 0;
   }
 

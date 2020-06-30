@@ -1,0 +1,35 @@
+.init-program-what {
+  background: url("images/init-program-what.png") no-repeat center center;
+  background-size: cover;
+  height: 480px;
+}
+.init-program-what__content {
+  max-width: 395px;
+  margin-top: 60px;
+}
+.init-program-what__content .top,
+.init-program-what__content .bottom {
+  display: flex;
+  align-items: center;
+}
+.init-program-what__content .top .number,
+.init-program-what__content .bottom .number {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: 16px;
+}
+.init-program-what__content .top .text,
+.init-program-what__content .bottom .text {
+  line-height: 1.5;
+}
+.init-program-what__content .bottom {
+  margin-top: 20px;
+}
+.init-program-what h2 {
+  color: var(--color-success-700);
+}
+.init-program-what h2 span {
+  color: #000;
+}
+
+/*# sourceMappingURL=initiation-program.css.map */

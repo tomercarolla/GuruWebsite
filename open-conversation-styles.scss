@@ -1,6 +1,6 @@
 .how-it-works {
   background: url('images/open-bg.jpg') no-repeat center center;
-  height: 600px;
+  height: 400px;
   background-size: cover;
 
   &__content {
@@ -12,7 +12,8 @@
     .top {
       padding-top: 140px;
       padding-left: 110px;
-      max-width: 530px;
+      max-width: 650px;
+      line-height: 1.5;
 
       p:last-child {
         margin-top: 20px;
@@ -27,9 +28,31 @@
 }
 
 .conversation-accordion {
-  min-height: 170px;
+  min-height: 570px;
+
+  &__title {
+    color: var(--color-primary-900);
+  }
+}
+
+.video-container {
+  background: url('images/video-bg.png') no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  background-position-x: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
 
   h2 {
-    font-weight: 600;
+    align-self: flex-start;
+    color: var(--color-primary-900);
+    margin-top: 20px;
+  }
+
+  &__youtube {
+    margin-bottom: 50px;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.3);
   }
 }
