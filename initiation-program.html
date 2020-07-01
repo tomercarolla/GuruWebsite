@@ -62,7 +62,7 @@
     </header>
 
     <section class="cover-img cover-img__init-program" id="coverImgContainer">
-        <h1 class="font-super-duper">שיחת פתיחה</h1>
+        <h1 class="font-super-duper">תוכנית חניכה</h1>
 
         <div class="text font-super">
             לכל תהליך טוב ויעיל יש מטרות, וגם כדי לבצע תהליך חניכה אפקטיבי יש להגדיר יעדים
@@ -70,13 +70,13 @@
     </section>
 
     <section class="sub-menu" id="subMenuContainer">
-        <a href="#" class="link">פתיחה</a>
-        <a href="#" class="link">סרטון</a>
-        <a href="#" class="link">ניסוח יעדים</a>
-        <a href="#" class="link">כתיבת מדדים</a>
+        <a href="#sectionOne" class="link">פתיחה</a>
+        <a href="#sectionTwo" class="link">סרטון</a>
+        <a href="#sectionThird" class="link">ניסוח יעדים</a>
+        <a href="#sectionFour" class="link">כתיבת מדדים</a>
     </section>
 
-    <section class="init-program-what padding-section">
+    <section class="init-program-what padding-section" id="sectionOne">
         <h2 class="font-super-duper">
             תוכנית חניכה, <span>מה זה?</span>
         </h2>
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <section class="padding-section init-program-info bg-color-warning-500">
+    <section class="padding-section init-program-info bg-color-warning-400">
         <img class="clips-black-img" src="images/clips-black.png" alt="">
 
         <div class="text font-big">
@@ -107,16 +107,18 @@
         </div>
     </section>
 
-    <section class="init-program-video padding-section">
+    <section class="init-program-video padding-section" id="sectionTwo">
         <div class="init-program-video__left">
             <h2 class="font-super-duper">
                 איך זה עובד?
             </h2>
 
-            <iframe class="video-youtube" width="560" height="315"
-                    src="https://www.youtube.com/embed/xQ38pabrJdA" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="video-container__youtube">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/xQ38pabrJdA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
         </div>
         <div class="init-program-video__right">
             <div class="title">
@@ -141,7 +143,7 @@
         </div>
     </section>
 
-    <section class="init-program-carousel padding-section accordion accordion__small">
+    <section class="init-program-carousel padding-section accordion accordion__small" id="sectionThird">
         <h2 class="font-super-duper">
             לכתוב יעדים חכם - להיות SMART
         </h2>
@@ -159,7 +161,7 @@
                 </div>
             </div>
             <div class="accordion__tab">
-                <input type="radio" id="tabTwo" name="smallCarousel" >
+                <input type="radio" id="tabTwo" name="smallCarousel">
                 <label class="font-super-duper" for="tabTwo">
                     R
                 </label>
@@ -167,11 +169,12 @@
                 <div class="accordion__tab--content">
                     <h3 class="font-super-semi-bold">Relevant - מטרה רלוונטית</h3>
 
-                    <p class="font-heading-1-normal">על היעד להיות רלוונטי <b>למאפייני הנחנך</b> ולנקודות חוזק וחולשה שלו</p>
+                    <p class="font-heading-1-normal">על היעד להיות רלוונטי <b>למאפייני הנחנך</b> ולנקודות חוזק וחולשה
+                        שלו</p>
                 </div>
             </div>
             <div class="accordion__tab">
-                <input type="radio" id="tabThird" name="smallCarousel" >
+                <input type="radio" id="tabThird" name="smallCarousel">
                 <label class="font-super-duper" for="tabThird">
                     A
                 </label>
@@ -183,7 +186,7 @@
                 </div>
             </div>
             <div class="accordion__tab">
-                <input type="radio" id="tabFour" name="smallCarousel" >
+                <input type="radio" id="tabFour" name="smallCarousel">
                 <label class="font-super-duper" for="tabFour">
                     M
                 </label>
@@ -195,7 +198,7 @@
                 </div>
             </div>
             <div class="accordion__tab">
-                <input type="radio" id="tabFive" name="smallCarousel" >
+                <input type="radio" id="tabFive" name="smallCarousel">
                 <label class="font-super-duper" for="tabFive">
                     S
                 </label>
@@ -203,16 +206,44 @@
                 <div class="accordion__tab--content">
                     <h3 class="font-super-semi-bold">Specific - מטרה ספציפית</h3>
 
-                    <p class="font-heading-1-normal">חייבת להיות <b>מוגדרת</b> היטב, <b>בלי הכללות,</b> <b>הפשאות או פשפושים</b></p>
+                    <p class="font-heading-1-normal">חייבת להיות <b>מוגדרת</b> היטב, <b>בלי הכללות,</b> <b>הפשאות או
+                        פשפושים</b></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="measurable-container padding-section">
+    <section class="measurable-container padding-section" id="sectionFour">
         <h2 class="font-super-duper">
             ומה עם מדדים להצלחה?
         </h2>
+
+        <div class="text-container">
+            <div class="text-container__top font-super-semi-bold">
+                מדד להצלחה = <span class="font-super">קריטריון שנגזר מהיעד ומעיד על העמידה בו</span>
+            </div>
+
+            <div class="text-container__middle">
+                <h3 class="font-super-semi-bold">איך נכתוב מדד להצלחה?</h3>
+            </div>
+
+            <div class="text-container__bottom">
+                <div class="left">
+                    <img src="images/arrow-two.png" alt="">
+                    <div>
+                        <h3 class="font-super-semi-bold">היעד</h3>
+                        <p class="font-heading-1-normal">ירידה פרטים</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/arrow-two.png" alt="">
+                    <div>
+                        <h3 class="font-super-semi-bold">המדד</h3>
+                        <p class="font-heading-1-normal">ביצוע משמרת שלמה עם הזמנות מדויקות ללא הערות מצד הלקוחות</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>

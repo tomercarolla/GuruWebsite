@@ -19,7 +19,7 @@
   }
 
   &__tab {
-    width: 80%;
+    width: 230px;
     position: relative;
 
     &:nth-of-type(1) {
@@ -104,6 +104,7 @@
       align-items: center;
       position: relative;
       padding: 0 1.5em;
+      transition: all .3s ease-in-out 0s;
 
       &:after {
         content: '';
@@ -116,6 +117,7 @@
       }
 
       &:hover {
+        transform: scale(1.1);
         span {
           display: block;
         }
@@ -193,7 +195,7 @@
 
         .accordion__tab--content {
           background: var(--color-success-200);
-          right: -205px;
+          right: -219px;
         }
       }
 
@@ -215,7 +217,7 @@
 
         .accordion__tab--content {
           background: var(--color-warning-200);
-          right: -410px;
+          right: -438px;
         }
       }
 
@@ -237,7 +239,7 @@
 
         .accordion__tab--content {
           background: var(--color-info-200);
-          right: -616px;
+          right: -657px;
         }
       }
 
@@ -259,13 +261,13 @@
 
         .accordion__tab--content {
           background: var(--color-success-200);
-          right: -821px;
+          right: -877px;
         }
       }
 
       &--content {
         position: absolute;
-        width: 891px;
+        width: 945px;
         top: 105px;
         display: flex;
         flex-direction: column;
@@ -285,10 +287,39 @@
     }
   }
 
+  &__medium {
+    .accordion__tab {
+      width: 130px;
+
+      &:nth-of-type(2) {
+        .accordion__tab--content {
+          right: -265px;
+        }
+      }
+
+      &:nth-of-type(3) {
+        .accordion__tab--content {
+          right: -530px;
+        }
+      }
+
+      .accordion__tab--content {
+        position: absolute;
+        width: 660px;
+        top: 115px;
+        line-height: 1.6;
+      }
+    }
+
+    .tabs-container.medium {
+      padding-left: 386px;
+      width: 100%;
+    }
+  }
+
   .tabs-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 80px;
+    display: flex;
+    justify-content: space-between;
     padding: 0 100px;
     margin: 40px 0;
   }

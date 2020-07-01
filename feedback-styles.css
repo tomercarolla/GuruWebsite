@@ -1,0 +1,95 @@
+.feedback-open {
+  background: url("images/feedback-open.jpg") no-repeat;
+  background-size: contain;
+  height: 440px;
+  padding-right: 550px;
+}
+.feedback-open__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 360px;
+  margin-top: 10px;
+}
+.feedback-open__content .clips-tips {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feedback-open__content .clips-tips > div {
+  display: flex;
+  align-items: center;
+  width: 140px;
+}
+.feedback-open__content .clips-tips > div img {
+  width: 60px;
+}
+
+.feedback-video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-video-container h2 {
+  align-self: flex-start;
+  color: var(--color-primary-900);
+}
+.feedback-video-container__youtube {
+  margin-top: 30px;
+  position: relative;
+}
+.feedback-video-container__youtube:after {
+  content: "";
+  position: absolute;
+  width: 565px;
+  height: 320px;
+  box-shadow: 0 0 0 1px #000;
+  top: -2px;
+  left: -3px;
+}
+
+.notes-container .notes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.notes-container .notes__right {
+  background: url("images/yellow-note.png") no-repeat center center;
+}
+.notes-container .notes__right > div {
+  transform: rotate(-5deg);
+}
+.notes-container .notes__middle {
+  background: url("images/blue-note.png") no-repeat center center;
+}
+.notes-container .notes__middle > div {
+  transform: rotate(5deg);
+}
+.notes-container .notes__left {
+  background: url("images/pink-note.png") no-repeat center center;
+}
+.notes-container .notes__left > div {
+  transform: rotate(-5deg);
+}
+.notes-container .notes > div {
+  width: 295px;
+  height: 245px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-accordion {
+  min-height: 570px;
+  background: url("images/feedback-accordion-bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.feedback-accordion__title {
+  color: var(--color-primary-900);
+}
+
+/*# sourceMappingURL=feedback-styles.css.map */
