@@ -44,16 +44,19 @@
   margin-bottom: 0;
   height: 17px;
   margin-left: 0.3em;
+  cursor: pointer;
 }
 .contact-container__form .radio-container p {
   font-size: 16px;
 }
 .contact-container__form .radio-container .yes-radio-button {
   margin-left: 0.5em;
+  cursor: pointer;
 }
 .contact-container__form .radio-container .radio-box {
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 .contact-container__form .d-flex-align--center {
   display: flex;
