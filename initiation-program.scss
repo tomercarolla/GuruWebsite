@@ -33,7 +33,7 @@
     color: var(--color-success-700);
 
     span {
-      color: #000;
+      color: var(--color-primary-900);
     }
   }
 }
@@ -135,10 +135,18 @@
       }
     }
   }
+
+  h2 {
+    color: var(--color-primary-900);
+  }
 }
 
 .init-program-carousel {
   height: 350px;
+
+  h2 {
+    color: var(--color-primary-900);
+  }
 }
 
 .measurable-container {
@@ -146,6 +154,10 @@
   background-size: cover;
   height: 500px;
   background-position-y: -90px;
+
+  h2 {
+    color: var(--color-primary-900);
+  }
 
   .text-container {
     margin-top: 30px;

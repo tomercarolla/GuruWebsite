@@ -30,7 +30,7 @@
   color: var(--color-success-700);
 }
 .init-program-what h2 span {
-  color: #000;
+  color: var(--color-primary-900);
 }
 
 .init-program-info {
@@ -118,9 +118,15 @@
   right: 10px;
   width: 25px;
 }
+.init-program-video h2 {
+  color: var(--color-primary-900);
+}
 
 .init-program-carousel {
   height: 350px;
+}
+.init-program-carousel h2 {
+  color: var(--color-primary-900);
 }
 
 .measurable-container {
@@ -128,6 +134,9 @@
   background-size: cover;
   height: 500px;
   background-position-y: -90px;
+}
+.measurable-container h2 {
+  color: var(--color-primary-900);
 }
 .measurable-container .text-container {
   margin-top: 30px;
