@@ -593,17 +593,15 @@ body {
   background-color: #FFF;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 0 460px;
   z-index: 999;
 }
 .sub-menu__conversation {
   padding: 0 520px;
 }
-.sub-menu.feedback .link:not(:last-child):after {
-  left: -25px;
-}
 .sub-menu.fixed {
-  position: fixed;
+  position: sticky;
   top: 55px;
   width: 1280px;
 }
@@ -613,13 +611,30 @@ body {
   align-items: center;
   position: relative;
 }
-.sub-menu .link:not(:last-child):after {
-  content: "|";
+.sub-menu .link:hover {
+  color: var(--color-info-700);
+}
+.sub-menu .link.active {
+  color: var(--color-info-700);
+}
+.sub-menu .link.active:after {
+  content: "";
   position: absolute;
-  left: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
+  border-bottom: 1px solid var(--color-info-700);
+  width: 25px;
+  height: 2px;
+  bottom: 0;
+}
+.sub-menu .divider {
+  width: 1px;
+  height: 20px;
+  background: #000;
+}
+
+.link-anchor {
+  position: absolute;
+  top: -105px;
+  visibility: hidden;
 }
 
 .download-file-container__text {

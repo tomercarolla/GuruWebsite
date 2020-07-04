@@ -70,13 +70,17 @@
     </section>
 
     <section class="sub-menu feedback" id="subMenuContainer">
-        <a href="#sectionOne" class="link">פתיחה</a>
-        <a href="#sectionTwo" class="link">סרטון</a>
-        <a href="#sectionThird" class="link">דגשים</a>
-        <a href="#sectionFour" class="link">מהלך שיחה</a>
+        <a href="#sectionOne" class="link" id="firstLink">פתיחה</a>
+        <div class="divider"></div>
+        <a href="#sectionTwo" class="link" id="secondLink">סרטון</a>
+        <div class="divider"></div>
+        <a href="#sectionThird" class="link" id="thirdLink">דגשים</a>
+        <div class="divider"></div>
+        <a href="#sectionFour" class="link" id="fourLink">מהלך שיחה</a>
     </section>
 
-    <section class="feedback-open padding-section" id="sectionOne">
+    <section class="feedback-open padding-section">
+        <div class="link-anchor" id="sectionOne"></div>
         <h2 class="font-super-duper">הגעת לחלק הכיפי!</h2>
 
         <div class="feedback-open__content">
@@ -107,7 +111,9 @@
         </div>
     </section>
 
-    <section class="feedback-video-container padding-section" id="sectionTwo">
+    <section class="feedback-video-container padding-section">
+        <div class="link-anchor" id="sectionTwo"></div>
+
         <h2 class="font-super-duper">איך זה עובד?</h2>
         <div class="feedback-video-container__youtube">
             <iframe width="560" height="315"
@@ -117,7 +123,8 @@
         </div>
     </section>
 
-    <section class="notes-container padding-section" id="sectionThird">
+    <section class="notes-container padding-section">
+        <div class="link-anchor" id="sectionThird"></div>
         <h2 class="font-super-duper">מה הכי חשוב?</h2>
 
         <div class="notes font-heading-2-normal">
@@ -253,5 +260,6 @@
 </section>
 
 <script src="js/script.js"></script>
+<script src="js/feedback-script.js"></script>
 </body>
 </html>

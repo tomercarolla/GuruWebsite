@@ -70,13 +70,17 @@
     </section>
 
     <section class="sub-menu" id="subMenuContainer">
-        <a href="#sectionOne" class="link">פתיחה</a>
-        <a href="#sectionTwo" class="link">סרטון</a>
-        <a href="#sectionThird" class="link">ניסוח יעדים</a>
-        <a href="#sectionFour" class="link">כתיבת מדדים</a>
+        <a href="#sectionOne" class="link" id="firstLink">פתיחה</a>
+        <div class="divider"></div>
+        <a href="#sectionTwo" class="link" id="secondLink">סרטון</a>
+        <div class="divider"></div>
+        <a href="#sectionThird" class="link" id="thirdLink">ניסוח יעדים</a>
+        <div class="divider"></div>
+        <a href="#sectionFour" class="link" id="fourLink">כתיבת מדדים</a>
     </section>
 
-    <section class="init-program-what padding-section" id="sectionOne">
+    <section class="init-program-what padding-section">
+        <div class="link-anchor" id="sectionOne"></div>
         <h2 class="font-super-duper">
             תוכנית חניכה, <span>מה זה?</span>
         </h2>
@@ -107,7 +111,8 @@
         </div>
     </section>
 
-    <section class="init-program-video padding-section" id="sectionTwo">
+    <section class="init-program-video padding-section">
+        <div class="link-anchor" id="sectionTwo"></div>
         <div class="init-program-video__left">
             <h2 class="font-super-duper">
                 איך זה עובד?
@@ -143,7 +148,8 @@
         </div>
     </section>
 
-    <section class="init-program-carousel padding-section accordion accordion__small" id="sectionThird">
+    <section class="init-program-carousel padding-section accordion accordion__small">
+        <div class="link-anchor" id="sectionThird"></div>
         <h2 class="font-super-duper">
             לכתוב יעדים חכם - להיות SMART
         </h2>
@@ -282,5 +288,6 @@
 </section>
 
 <script src="js/script.js"></script>
+<script src="js/init-program-script.js"></script>
 </body>
 </html>

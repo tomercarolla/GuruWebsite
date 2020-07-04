@@ -3,6 +3,7 @@
   background-size: cover;
   height: 510px;
   background-position-y: -70px;
+  position: relative;
 }
 .init-program-what__content {
   max-width: 395px;
@@ -54,6 +55,7 @@
   background: url("images/hand-img.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
+  position: relative;
 }
 .init-program-video__left {
   display: flex;
@@ -124,6 +126,7 @@
 
 .init-program-carousel {
   height: 350px;
+  position: relative;
 }
 .init-program-carousel h2 {
   color: var(--color-primary-900);

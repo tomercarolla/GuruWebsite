@@ -70,12 +70,15 @@
     </section>
 
     <section class="sub-menu sub-menu__conversation" id="subMenuContainer">
-        <a href="#sectionOne" class="link">פתיחה</a>
-        <a href="#sectionTwo" class="link">סרטון</a>
-        <a href="#sectionThird" class="link">מבנה שיחה</a>
+        <a href="#sectionOne" class="link" id="firstLink">פתיחה</a>
+        <div class="divider"></div>
+        <a href="#sectionTwo" class="link" id="secondLink">סרטון</a>
+        <div class="divider"></div>
+        <a href="#sectionThird" class="link" id="thirdLink">מבנה שיחה</a>
     </section>
 
-    <section class="how-it-works" id="sectionOne">
+    <section class="how-it-works">
+        <div class="link-anchor" id="sectionOne"></div>
         <div class="how-it-works__content">
             <div class="top font-big">
                 <p><b>שיחת פתיחה</b> היא נקודת ההתחלה לכל תהליך חניכה וליווי של עובד.</p>
@@ -85,7 +88,8 @@
         </div>
     </section>
 
-    <section class="video-container padding-section" id="sectionTwo">
+    <section class="video-container padding-section">
+        <div class="link-anchor" id="sectionTwo"></div>
         <h2 class="font-super-duper">איך זה עובד?</h2>
         <div class="video-container__youtube">
             <iframe width="560" height="315"
@@ -222,5 +226,6 @@
 </section>
 
 <script src="js/script.js"></script>
+<script src="js/open-conversation-script.js"></script>
 </body>
 </html>
