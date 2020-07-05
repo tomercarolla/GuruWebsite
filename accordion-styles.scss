@@ -16,6 +16,12 @@
         padding: 1em;
       }
     }
+
+    &:focus,
+    &:focus-within {
+      border: 1px solid #000;
+      outline: #000;
+    }
   }
 
   &__tab {

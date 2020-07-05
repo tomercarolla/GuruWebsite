@@ -1,8 +1,7 @@
 .contact-container {
   padding-top: 100px;
-  padding-right: 20px;
-  background: url("images/contact-bg.jpg") no-repeat center -140px;
-  background-size: cover;
+  background: url("images/contact-bg.jpg") no-repeat -30px 120px;
+  background-size: 800px;
 }
 .contact-container__form {
   width: 450px;

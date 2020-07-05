@@ -59,12 +59,12 @@
     </nav>
 </header>
 <main role="main">
-    <section class="cover-img cover-img__homepage">
-        <h1 class="cover-text font-super-duper">ללמוד איך לחנוך עובדים, <span
-                class="twist-text">עם טוויסט</span class="twist-text"></h1>
+    <section class="cover-img cover-img__homepage" tabindex="0">
+        <h1 class="cover-text font-super-duper">ללמוד איך לחנוך עובדים,
+            <span class="twist-text">עם טוויסט</span></h1>
     </section>
 
-    <section class="padding-section what-is-twist">
+    <section class="padding-section what-is-twist" tabindex="0">
         <h1 class="font-super-duper what-is-twist__title">מה הטוויסט?</h1>
 
         <div class="font-super text">
@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <section class="padding-section what-we-do">
+    <section class="padding-section what-we-do" tabindex="0">
         <h1 class="font-super-duper what-we-do__title">מה עושים פה?</h1>
 
         <div class="link-container font-big">
@@ -97,14 +97,14 @@
         </div>
     </section>
 
-    <section class="carousel-container">
+    <section class="carousel-container" tabindex="0">
         <img class="clips-image" src="images/clips-group.png" alt="">
         <h1 class="font-super-duper carousel-container__title">ת'שמעו קטע...</h1>
 
-        <div class="homepage-carousel carousel">
-            <input type="radio" class="carousel__activator" name="carousel" id="firstStage" checked="checked">
-            <input type="radio" class="carousel__activator" name="carousel" id="secondStage">
-            <input type="radio" class="carousel__activator" name="carousel" id="thirdStage">
+        <div class="homepage-carousel carousel" tabindex="0">
+            <input type="radio" class="carousel__activator" hidden name="carousel" id="firstStage" checked="checked">
+            <input type="radio" class="carousel__activator" hidden name="carousel" id="secondStage">
+            <input type="radio" class="carousel__activator" hidden name="carousel" id="thirdStage">
 
             <ul class="carousel__stages font-big">
                 <li class="carousel__stages--slide">
@@ -119,7 +119,8 @@
             </ul>
 
             <div class="carousel__arrows">
-                <label for="secondStage" class="arrow carousel__arrows--next"></label>
+                <label class="arrow carousel__arrows--previous" hidden aria-hidden="true"></label>
+                <label for="secondStage" class="arrow carousel__arrows--next" aria-label="שקף הבא"></label>
             </div>
             <div class="carousel__arrows">
                 <label for="firstStage" class="arrow carousel__arrows--previous"></label>
@@ -127,6 +128,7 @@
             </div>
             <div class="carousel__arrows">
                 <label for="secondStage" class="arrow carousel__arrows--previous"></label>
+                <label class="arrow carousel__arrows--next"></label>
             </div>
 
             <div class="carousel__dots">
@@ -137,6 +139,13 @@
 
             <button class="btn font-heading-1 not-allowed">ומה עשיתם?</button>
         </div>
+    </section>
+
+    <section class="credit-container">
+        <div class="popover" id="creditPopover">
+
+        </div>
+        <button class="twist-bg-info" onclick="showPopover()">בטוויסט נותנים קרדיט</button>
     </section>
 </main>
 <footer role="contentinfo">
@@ -172,5 +181,7 @@
         </div>
     </div>
 </footer>
+
+<script src="js/popover.js"></script>
 </body>
 </html>

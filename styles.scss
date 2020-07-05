@@ -380,6 +380,77 @@ footer {
   cursor: not-allowed;
 }
 
+.credit-container {
+  padding: 20px 0;
+  position: relative;
+
+  .popover {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    padding: 0;
+    background: #FFFFFF;
+    border: 1px solid #000;
+    top: -85px;
+    right: 210px;
+    z-index: 9;
+    transform: scale(0);
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+    &.show {
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -32px;
+      transform: translateY(-50%) rotate(-90deg);
+      border-style: solid;
+      border-width: 21px 21px 0;
+      border-color: #000 transparent;
+      display: block;
+      width: 0;
+      z-index: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -31px;
+      transform: translateY(-50%) rotate(-90deg);
+      border-style: solid;
+      border-width: 21px 21px 0;
+      border-color: #FFFFFF transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+    }
+  }
+
+  .twist-bg-info {
+    background: var(--color-info-500);
+    border: 1px solid var(--color-info-500);
+    border-radius: 20px;
+    width: 180px;
+    height: 40px;
+    font-size: 1em;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.3s ease-out 0s;
+
+    &:hover {
+      background: var(--color-info-400);
+    }
+  }
+}
+
 //homepage CSS
 
 .what-is-twist {
@@ -531,7 +602,6 @@ footer {
 }
 
 .carousel-container {
-  height: 370px;
   background-color: #FFF;
   position: relative;
 
@@ -549,7 +619,6 @@ footer {
     z-index: 99;
   }
 }
-
 
 
 $questionTransition: 0.5s;

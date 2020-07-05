@@ -11,6 +11,10 @@
   height: 305px;
   padding: 1em;
 }
+.accordion input:focus, .accordion input:focus-within {
+  border: 1px solid #000;
+  outline: #000;
+}
 .accordion__tab {
   width: 230px;
   position: relative;

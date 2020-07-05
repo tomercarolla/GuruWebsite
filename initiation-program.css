@@ -117,11 +117,11 @@
   color: var(--color-primary-900);
 }
 
-.init-program-carousel {
+.init-program-accordion {
   height: 350px;
   position: relative;
 }
-.init-program-carousel h2 {
+.init-program-accordion h2 {
   color: var(--color-primary-900);
 }
 
