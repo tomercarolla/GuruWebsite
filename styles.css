@@ -352,6 +352,9 @@ body {
   font-weight: 400;
 }
 
+* {
+  outline: none;
+}
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
